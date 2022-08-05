@@ -1,14 +1,6 @@
-temperature = float(input("Enter Farenheit:"))
-print("The Farenheit is: " + str(temperature))
-c = (temperature - 32) * 5/9
-print("The Celsius is: ", end=" ")
-print(c)
-
-
-
-temp = input("Enter Celsius:")
-print("The Celsius is: " + temp)
-temp = float(temp)
-f = (temp * 9/5) + 32
-print("The Farenheit is: ", end=" ")
-print(f)
+temperature = input("celsius or farenheiht?")
+degree = eval(input("how many degrees?"))
+if temperature == "celsius":
+  print("farenheit is: ", (degree * 1.8)+ 32)
+elif temperature == "farenheit":
+  print("celsius is: ", (degree - 32 ) / 1.8)
